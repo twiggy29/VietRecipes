@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Table </title>
+	
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/styles.css" rel = "stylesheet">
+
+</head>
+
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">VietRecipes</a>
+    </div>
+	
+	<form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+	</div>
+</nav>
+
+
+<!--Side Navbar  -->	
+	<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="#">Appetizers</a></li>
+            <li><a href="#">Entrees</a></li>
+            <li><a href="#">Drinks/Dessert</a></li>
+            <li><a href="table.html">Table</a></li>
+          </ul>
+		  </div>
+<!--Content  -->
+		   <div class = "col-md-offset-2">
+	<h1 class="page-header">Full Menu </h1>
+		<table class = "table table-hover">
+		<tr>
+		<td>ID  </td>
+		<td>Name</td>
+		<td>Category</td>
+		<td>Description</td>
+		</tr>
+		
+		<tr>
+		<td>1	</td>
+		<td>Vietnamese Caramelized Pork	</td>
+		<td>Entrees	</td>
+		<td> <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#menu1"> More Info </button>	</td>
+		</tr>
+		
+		<tr>
+		<td>2	</td>
+		<td>Vietnamese Caramelized Pork	</td>
+		<td>Entrees	</td>
+		<td> <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#menu1"> More Info </button>	</td>
+		</tr>
+		
+		</table>
+			</div>
+		</div>	 
+	</div>
+
+	
+	
+
+
+<!-- Modal -->
+<div class="modal fade" id="menu1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Vietnamese Caramelized Pork</h4>
+      </div>
+      <div class="modal-body">
+        <p> <b> Ingredients </b> </p>
+		<p> Recipe makes 4 servings </p>
+		<ul>
+		<li>1 tablespoon vegetable oil </li>
+		<li>1 cup white sugar </li>
+		<li>2 pounds pork sparerib, cut into 1-inch pieces </li>
+		<li>2 green onions, cut in 2-inch lengths </li>
+		<li>1 green chile peper, chopped</li>
+		<li>1 teaspoon ground black pepper</li>
+		<li>2 shallots, finely chopped</li>
+		<li>2 cloves garlic, minced</li>
+		<li>1 tablespoon Asian (toasted) sesame oil </li>
+		<li>salt to taste </li>
+		<li>1 tablespoon green onion, thinly sliced and separated into rings </li>
+		</ul>
+		<p> <b> Directions </b> </p>
+		<p>1. Place a large heavy skillet or wok over high heat, drizzle the oil into the pan,
+		and pour the sugar over the oil. Cook and stir constantly until the sugar dissolves and 
+		turns a light brown color. Be careful, the melted sugar is very hot. Stir in the pork,
+		2 green onions, chile pepper, black pepper, shallots, garlic, and salt, and toss them in the caramelized 
+		sugar until the pork turns golden brown. Drizzle the sesame oil over the pork and vegetables, reduce the heat to low,
+		and let simmer to reduce the juices.</p>
+		
+		<p>2. When the juices have been mostly absorbed, turn the heat back up to high, and cook and stir the pork and 
+		vegetables until the sauce has thickened and coated the pork, about 5 minutes. Sprinkle with 1 tablespoon of green onion rings.
+		</p>
+		
+		<table class = "table">
+		<tr> <td> Prep: 15 Minutes </td> </tr>
+		<tr> <td> Cook: 20 Minutes </td> </tr>
+		<tr> <td> Ready In: 35 Minutes </td></tr>
+		
+		</table>
+		
+		
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>
